@@ -1,3 +1,39 @@
+/*
+
+  oled_u8g2.c
+
+  Monochrome minimal user interface: Glue code between mui and u8g2.
+
+  Universal 8bit Graphics Library (https://github.com/olikraus/u8g2/)
+
+  Copyright (c) 2021, olikraus@gmail.com
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without modification, 
+  are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this list 
+    of conditions and the following disclaimer.
+    
+  * Redistributions in binary form must reproduce the above copyright notice, this 
+    list of conditions and the following disclaimer in the documentation and/or other 
+    materials provided with the distribution.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND 
+  CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, 
+  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
+
+*/
 #include "gpio.h"
 #include "oled_u8g2.h"
 
@@ -15,34 +51,6 @@
 #define OLED_SDIN_Set() GPIOB->BSRR=GPIO_PIN_15
 
 u8g2_t u8g2;
-
-void OLED_U8G2_Init(void)
-{
-//   GPIO_InitTypeDef GPIO_InitStruct = {0};
-
-//   /* GPIOB/GPIOC clock enable */
-//   __HAL_RCC_GPIOB_CLK_ENABLE();
-//   __HAL_RCC_GPIOC_CLK_ENABLE(); 
-
-//   /*Configure GPIO pin Output Level */
-//   HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, GPIO_PIN_RESET);
-//   /*Configure GPIO pin Output Level */
-//   HAL_GPIO_WritePin(GPIOB, LED_Pin|OLED_RST_Pin|OLED_SDA_Pin|OLED_SCL_Pin, GPIO_PIN_RESET);
-//   /*Configure GPIO pin : PtPin */
-//   GPIO_InitStruct.Pin = OLED_DC_Pin;
-//   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-//   GPIO_InitStruct.Pull = GPIO_NOPULL;
-//   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-//   HAL_GPIO_Init(OLED_DC_GPIO_Port, &GPIO_InitStruct);
-//   /*Configure GPIO pins : PBPin PBPin PBPin PBPin 
-//                            PBPin */
-//   GPIO_InitStruct.Pin = OLED_RST_Pin|OLED_SDA_Pin|OLED_SCL_Pin;
-//   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-//   GPIO_InitStruct.Pull = GPIO_NOPULL;
-//   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-//   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);    
-
-}
 
 uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8,
     U8X8_UNUSED uint8_t msg, U8X8_UNUSED uint8_t arg_int,

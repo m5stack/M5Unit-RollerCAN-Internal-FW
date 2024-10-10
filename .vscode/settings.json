@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "arm_math.h": "c",
+        "motordriver.h": "c"
+    }
+}

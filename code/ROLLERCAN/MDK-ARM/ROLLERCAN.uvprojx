@@ -1188,11 +1188,6 @@
               <FilePath>..\MyFile\src\mysys.c</FilePath>
             </File>
             <File>
-              <FileName>oled.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MyFile\src\oled.c</FilePath>
-            </File>
-            <File>
               <FileName>myadc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\MyFile\src\myadc.c</FilePath>

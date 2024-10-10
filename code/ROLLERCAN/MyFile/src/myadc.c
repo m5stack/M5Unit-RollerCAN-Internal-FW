@@ -1,4 +1,8 @@
-
+/*
+ * SPDX-FileCopyrightText: 2024 M5Stack Technology CO LTD
+ *
+ * SPDX-License-Identifier: MIT
+ */
 #include "myadc.h"
 #include "adc.h"
 #include "stm32g4xx_hal_adc_ex.h"
@@ -40,11 +44,6 @@ void MyADCZeroCal(void)
     ic_offset=adc1_convbuf[2];
     
     adc_cal_ok=1;
-
-    //ia_offset=2048;
-   // ib_offset=2048;
-   // ic_offset=2048;
-
 }
 
 void MyAdcProcess(void)
@@ -110,7 +109,3 @@ int32_t MyAdcGetCurrent(uint8_t channel)
     }
     return current_val;
 }
-
-
-
-

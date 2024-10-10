@@ -1,4 +1,9 @@
 
+/*
+ * SPDX-FileCopyrightText: 2024 M5Stack Technology CO LTD
+ *
+ * SPDX-License-Identifier: MIT
+ */
 #include "motordriver.h"
 #include "tim.h"
 
@@ -464,9 +469,7 @@ void MotorDriverSetMode(uint8_t val)
             if (sys_status == SYS_ERROR) {
                 rgb_color = 0x320000;
             }          
-            // neopixel_set_color(0, rgb_color);
-            // neopixel_set_color(1, rgb_color); 
-            // ws2812_show();           
+           
             if (error_code)
                 sys_status = SYS_ERROR;
             else

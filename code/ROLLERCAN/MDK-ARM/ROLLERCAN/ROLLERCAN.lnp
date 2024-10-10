@@ -44,7 +44,6 @@
 ".\rollercan\system_stm32g4xx.o"
 ".\rollercan\motordriver.o"
 ".\rollercan\mysys.o"
-".\rollercan\oled.o"
 ".\rollercan\myadc.o"
 ".\rollercan\oled_u8g2.o"
 ".\rollercan\u8g2_disp_fun.o"

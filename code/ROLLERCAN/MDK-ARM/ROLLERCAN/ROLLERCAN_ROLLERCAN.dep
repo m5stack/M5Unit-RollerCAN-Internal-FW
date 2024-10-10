@@ -1,7 +1,7 @@
 Dependencies for Project 'ROLLERCAN', Target 'ROLLERCAN': (DO NOT MODIFY !)
 F (startup_stm32g431xx.s)(0x65FBFF1F)(--cpu Cortex-M4.fp -g --pd "__MICROLIB SETA 1"-I.\RTE\_ROLLERCAN-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.5.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include--pd "__UVISION_VERSION SETA 525"--pd "_RTE_ SETA 1"--pd "STM32G431xx SETA 1"--list startup_stm32g431xx.lst--xref -o .\rollercan\startup_stm32g431xx.o--depend .\rollercan\startup_stm32g431xx.d)
-F (..\MyFile\src\ws2812.c)(0x66697884)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/ws2812.o -MD)
-I (..\MyFile\inc\ws2812.h)(0x657A7F20)
+F (..\MyFile\src\ws2812.c)(0x67079A80)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/ws2812.o -MD)
+I (..\MyFile\inc\ws2812.h)(0x67079ACB)
 I (..\Core\Inc\main.h)(0x666BA414)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x64F5940D)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x65FA45B1)
@@ -58,7 +58,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
 I (..\Core\Inc\tim.h)(0x65260A4D)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
 F (..\Core\Src\i2c_ex.c)(0x65C09B33)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/i2c_ex.o -MD)
@@ -119,19 +119,19 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5AA6413A)
 I (..\Core\Inc\i2c.h)(0x666BBABA)
-I (..\MyFile\inc\u8g2_disp_fun.h)(0x66D972B8)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+I (..\MyFile\inc\u8g2_disp_fun.h)(0x67079B4B)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
-I (..\MyFile\inc\button.h)(0x65D6A822)
+I (..\MyFile\inc\button.h)(0x67079CD7)
 I (..\Core\Inc\gpio.h)(0x65228113)
 F (..\Core\Src\flash.c)(0x65A4F8DA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/flash.o -MD)
 I (..\Core\Inc\flash.h)(0x6581083F)
@@ -234,26 +234,26 @@ I (..\Core\Inc\i2c.h)(0x666BBABA)
 I (..\Core\Inc\spi.h)(0x657AD91F)
 I (..\Core\Inc\tim.h)(0x65260A4D)
 I (..\Core\Inc\gpio.h)(0x65228113)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-I (..\MyFile\inc\ws2812.h)(0x657A7F20)
+I (..\MyFile\inc\ws2812.h)(0x67079ACB)
 I (..\Core\Inc\flash.h)(0x6581083F)
 I (..\Core\Inc\i2c_ex.h)(0x6548A42F)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
-I (..\MyFile\inc\u8g2_disp_fun.h)(0x66D972B8)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+I (..\MyFile\inc\u8g2_disp_fun.h)(0x67079B4B)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5AA6413A)
-I (..\MyFile\inc\button.h)(0x65D6A822)
-I (..\MyFile\inc\myadc.h)(0x667131B5)
-I (..\MyFile\inc\smart_knob.h)(0x65D8388A)
+I (..\MyFile\inc\button.h)(0x67079CD7)
+I (..\MyFile\inc\myadc.h)(0x67079C98)
+I (..\MyFile\inc\smart_knob.h)(0x67079B72)
 F (../Core/Src/gpio.c)(0x65FA45AD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/gpio.o -MD)
 I (..\Core\Inc\gpio.h)(0x65228113)
 I (..\Core\Inc\main.h)(0x666BA414)
@@ -478,26 +478,26 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
-I (..\MyFile\inc\smart_knob.h)(0x65D8388A)
-I (..\MyFile\inc\u8g2_disp_fun.h)(0x66D972B8)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
+I (..\MyFile\inc\smart_knob.h)(0x67079B72)
+I (..\MyFile\inc\u8g2_disp_fun.h)(0x67079B4B)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5AA6413A)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
-I (..\MyFile\inc\button.h)(0x65D6A822)
+I (..\MyFile\inc\button.h)(0x67079CD7)
 I (..\Core\Inc\gpio.h)(0x65228113)
-I (..\MyFile\inc\myadc.h)(0x667131B5)
+I (..\MyFile\inc\myadc.h)(0x67079C98)
 I (..\Core\Inc\i2c.h)(0x666BBABA)
-I (..\MyFile\inc\ws2812.h)(0x657A7F20)
+I (..\MyFile\inc\ws2812.h)(0x67079ACB)
 F (..\Core\Src\i2c.c)(0x666BBB1A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/i2c.o -MD)
 I (..\Core\Inc\i2c.h)(0x666BBABA)
 I (..\Core\Inc\main.h)(0x666BA414)
@@ -723,24 +723,24 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
 I (..\Core\Inc\stm32g4xx_it.h)(0x65FAB1D8)
-I (..\MyFile\inc\u8g2_disp_fun.h)(0x66D972B8)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+I (..\MyFile\inc\u8g2_disp_fun.h)(0x67079B4B)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5AA6413A)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
-I (..\MyFile\inc\button.h)(0x65D6A822)
+I (..\MyFile\inc\button.h)(0x67079CD7)
 I (..\Core\Inc\gpio.h)(0x65228113)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
-I (..\MyFile\inc\myadc.h)(0x667131B5)
-I (..\MyFile\inc\smart_knob.h)(0x65D8388A)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
+I (..\MyFile\inc\myadc.h)(0x67079C98)
+I (..\MyFile\inc\smart_knob.h)(0x67079B72)
 F (../Core/Src/stm32g4xx_hal_msp.c)(0x65228114)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/stm32g4xx_hal_msp.o -MD)
 I (..\Core\Inc\main.h)(0x666BA414)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x64F5940D)
@@ -1882,8 +1882,8 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_spi.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_spi_ex.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim_ex.h)(0x64F5940D)
-F (..\MyFile\src\motordriver.c)(0x6667B29A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/motordriver.o -MD)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
+F (..\MyFile\src\motordriver.c)(0x67079CAF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/motordriver.o -MD)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x64F5940D)
@@ -1939,25 +1939,25 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x64F5940D)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-I (..\MyFile\inc\myadc.h)(0x667131B5)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\myadc.h)(0x67079C98)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
-I (..\MyFile\inc\u8g2_disp_fun.h)(0x66D972B8)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+I (..\MyFile\inc\u8g2_disp_fun.h)(0x67079B4B)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5AA6413A)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\button.h)(0x65D6A822)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\button.h)(0x67079CD7)
 I (..\Core\Inc\gpio.h)(0x65228113)
-I (..\MyFile\inc\ws2812.h)(0x657A7F20)
-F (..\MyFile\src\mysys.c)(0x66D96F8D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/mysys.o -MD)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\ws2812.h)(0x67079ACB)
+F (..\MyFile\src\mysys.c)(0x67079E5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/mysys.o -MD)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x64F5940D)
@@ -1996,14 +1996,14 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim_ex.h)(0x64F5940D)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
 I (..\Drivers\CMSIS\DSP\Include\arm_const_structs.h)(0x64F5940C)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x64F5940C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
-I (..\MyFile\inc\myadc.h)(0x667131B5)
+I (..\MyFile\inc\myadc.h)(0x67079C98)
 I (..\Core\Inc\tim.h)(0x65260A4D)
 I (..\Core\Inc\main.h)(0x666BA414)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h)(0x64F5940D)
@@ -2017,67 +2017,26 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x64F5940D)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
-I (..\MyFile\inc\oled.h)(0x6523D833)
-I (..\MyFile\inc\bmp.h)(0x5E16FCBE)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+I (..\MyFile\inc\bmp.h)(0x67079CE6)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
-I (..\MyFile\inc\u8g2_disp_fun.h)(0x66D972B8)
+I (..\MyFile\inc\u8g2_disp_fun.h)(0x67079B4B)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5AA6413A)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\button.h)(0x65D6A822)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\button.h)(0x67079CD7)
 I (..\Core\Inc\gpio.h)(0x65228113)
-I (..\MyFile\inc\ws2812.h)(0x657A7F20)
+I (..\MyFile\inc\ws2812.h)(0x67079ACB)
 I (..\Core\Inc\i2c.h)(0x666BBABA)
 I (..\Core\Inc\i2c_ex.h)(0x6548A42F)
-I (..\MyFile\inc\smart_knob.h)(0x65D8388A)
+I (..\MyFile\inc\smart_knob.h)(0x67079B72)
 I (..\Core\Inc\fdcan.h)(0x6669736E)
-F (..\MyFile\src\oled.c)(0x657BB425)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/oled.o -MD)
-I (..\MyFile\inc\oled.h)(0x6523D833)
-I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x64F59409)
-I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x64F59409)
-I (..\Drivers\CMSIS\Include\core_cm4.h)(0x64F5940D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6413A)
-I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x64F5940D)
-I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x64F5940D)
-I (..\Drivers\CMSIS\Include\cmsis_armclang_ltm.h)(0x64F5940D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5AA6413A)
-I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x64F5940D)
-I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x64F59409)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x64F5940D)
-I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x65FA45B1)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x64F5940D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5AA6413A)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_adc_ex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_fdcan.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_spi.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_spi_ex.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim.h)(0x64F5940D)
-I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim_ex.h)(0x64F5940D)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
-I (..\MyFile\inc\oledfont.h)(0x5E14019B)
-F (..\MyFile\src\myadc.c)(0x667131BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/myadc.o -MD)
-I (..\MyFile\inc\myadc.h)(0x667131B5)
+F (..\MyFile\src\myadc.c)(0x67079C8E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/myadc.o -MD)
+I (..\MyFile\inc\myadc.h)(0x67079C98)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x64F5940D)
@@ -2134,7 +2093,7 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x64F5940D)
 I (..\Core\Inc\tim.h)(0x65260A4D)
-F (..\MyFile\src\oled_u8g2.c)(0x658A33F3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/oled_u8g2.o -MD)
+F (..\MyFile\src\oled_u8g2.c)(0x67079D33)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/oled_u8g2.o -MD)
 I (..\Core\Inc\gpio.h)(0x65228113)
 I (..\Core\Inc\main.h)(0x666BA414)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x64F5940D)
@@ -2190,21 +2149,21 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
-F (..\MyFile\src\u8g2_disp_fun.c)(0x66F0D91C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/u8g2_disp_fun.o -MD)
-I (..\MyFile\inc\u8g2_disp_fun.h)(0x66D972B8)
-I (..\MyFile\inc\oled_u8g2.h)(0x657BC087)
+F (..\MyFile\src\u8g2_disp_fun.c)(0x67079D2C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/u8g2_disp_fun.o -MD)
+I (..\MyFile\inc\u8g2_disp_fun.h)(0x67079B4B)
+I (..\MyFile\inc\oled_u8g2.h)(0x67079BE8)
 I (..\U8g2_lib\u8g2.h)(0x656BB7FA)
 I (..\U8g2_lib\u8x8.h)(0x656BB7FA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x5AA64138)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x64F5940D)
@@ -2242,8 +2201,8 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_tim_ex.h)(0x64F5940D)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5AA6413A)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (..\Drivers\CMSIS\DSP\Include\arm_const_structs.h)(0x64F5940C)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x64F5940C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5AA6413A)
@@ -2251,7 +2210,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
-I (..\MyFile\inc\button.h)(0x65D6A822)
+I (..\MyFile\inc\button.h)(0x67079CD7)
 I (..\Core\Inc\main.h)(0x666BA414)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x64F5940D)
@@ -2265,13 +2224,13 @@ I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x64F5940D)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x64F5940D)
 I (..\Core\Inc\gpio.h)(0x65228113)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
-I (..\MyFile\inc\ws2812.h)(0x657A7F20)
-I (..\MyFile\inc\smart_knob.h)(0x65D8388A)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
+I (..\MyFile\inc\ws2812.h)(0x67079ACB)
+I (..\MyFile\inc\smart_knob.h)(0x67079B72)
 I (..\Core\Inc\fdcan.h)(0x6669736E)
-F (..\MyFile\src\encoder.c)(0x65D16563)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/encoder.o -MD)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+F (..\MyFile\src\encoder.c)(0x6707966F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/encoder.o -MD)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x64F5940D)
@@ -2316,9 +2275,9 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
-F (..\MyFile\src\button.c)(0x65D6AD2A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/button.o -MD)
-I (..\MyFile\inc\button.h)(0x65D6A822)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
+F (..\MyFile\src\button.c)(0x67079669)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/button.o -MD)
+I (..\MyFile\inc\button.h)(0x67079CD7)
 I (..\Core\Inc\main.h)(0x666BA414)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x64F5940D)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x65FA45B1)
@@ -2431,8 +2390,8 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-F (..\MyFile\src\smart_knob.c)(0x666A7339)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/smart_knob.o -MD)
-I (..\MyFile\inc\smart_knob.h)(0x65D8388A)
+F (..\MyFile\src\smart_knob.c)(0x670797FD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/smart_knob.o -MD)
+I (..\MyFile\inc\smart_knob.h)(0x67079B72)
 I (..\Core\Inc\main.h)(0x666BA414)
 I (..\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x64F5940D)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x65FA45B1)
@@ -2487,11 +2446,11 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
-I (..\MyFile\inc\mysys.h)(0x66D96FE2)
+I (..\MyFile\inc\mysys.h)(0x67079C7B)
 I (..\MyFile\inc\pid_controller.h)(0x662B00D7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5AA6413A)
-I (..\MyFile\inc\motordriver.h)(0x65ADD03B)
-F (..\MyFile\src\tle5012b.c)(0x662B48F3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/tle5012b.o -MD)
+I (..\MyFile\inc\motordriver.h)(0x67079CBA)
+F (..\MyFile\src\tle5012b.c)(0x67079AF8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../MyFile/inc -I ../Drivers/CMSIS/DSP/Include -I ../U8g2_lib-I./RTE/_ROLLERCAN-IC:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include-IC:/Keil_v5/ARM/PACK/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o ./rollercan/tle5012b.o -MD)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x64F5940C)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x64F5940D)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6413A)
@@ -2502,8 +2461,8 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6413A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\float.h)(0x5AA6413A)
 I (..\Drivers\CMSIS\DSP\Include\arm_const_structs.h)(0x64F5940C)
 I (..\Drivers\CMSIS\DSP\Include\arm_common_tables.h)(0x64F5940C)
-I (..\MyFile\inc\encoder.h)(0x6667B202)
-I (..\MyFile\inc\tle5012b.h)(0x662B48F3)
+I (..\MyFile\inc\encoder.h)(0x67079CC5)
+I (..\MyFile\inc\tle5012b.h)(0x67079D72)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x64F59409)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x64F5940D)

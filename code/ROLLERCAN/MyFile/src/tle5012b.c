@@ -1,4 +1,8 @@
-
+/*
+ * SPDX-FileCopyrightText: 2024 M5Stack Technology CO LTD
+ *
+ * SPDX-License-Identifier: MIT
+ */
 #include "arm_math.h"
 #include "arm_const_structs.h"
 
@@ -58,24 +62,15 @@ void EncoderGetData(void)
 		//读取SPI数据
 		ENCODER_SPI_CS_L;
 		ENCODER_SPI_CS_L;
-		//HAL_SPI_TransmitReceive(&ENCODER_SPI_HW, (uint8_t*)&data_t[0], (uint8_t*)&data_r[0], 1, HAL_MAX_DELAY);
+
 		SPI_TransmitReceive(&hspi1, data_t[0], &data_r[0]);
 		SPI_TransmitReceive(&hspi1, data_t[1],&data_r[1]);
-		//HAL_Delay(1);
 
-		//HAL_SPI_TransmitReceive(&ENCODER_SPI_HW, (uint8_t*)&data_t[1], (uint8_t*)&data_r[1], 1, HAL_MAX_DELAY);
-		//SPI_TransmitReceive(&hspi1, data_t[1],&data_r[1]);
-		//HAL_Delay(1);
 		ENCODER_SPI_CS_H;
 		ENCODER_SPI_CS_H;
-		//encoder_spi.sample_data = ((data_r[0] & 0x00FF) << 8) | (data_r[1] & 0x00FF);
 		encoder_spi.sample_data = data_r[1];
 
-
-
 		encoder_spi.angle = (((encoder_spi.sample_data & 0x7fff) << 1) >> 2);//&0X7FFF;
-		//encoder_spi.no_mag_flag = (bool)(encoder_spi.sample_data & (0x0001 << 1));
-	
 }
 
 ENCODER_Typedef	encoder;

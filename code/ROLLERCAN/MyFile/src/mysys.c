@@ -1,11 +1,14 @@
-
+/*
+ * SPDX-FileCopyrightText: 2024 M5Stack Technology CO LTD
+ *
+ * SPDX-License-Identifier: MIT
+ */
 #include "mysys.h"
 #include "motordriver.h"
 #include "myadc.h"
 #include "tim.h"
 #include "tle5012b.h"
 
-#include "oled.h"
 #include "bmp.h"
 
 #include "arm_const_structs.h"
@@ -504,33 +507,7 @@ void InitMysys(void)
 	MyADCZeroCal();
 
 	EncoderInit();
-  HAL_Delay(300);
-
-  // //wait for encoder calibration  等待编码器校准，此处临时使用阻塞式，实际使用不要阻塞
-  // while(IsMotorDriverEncCalBusy())
-  // {
-  //   ;
-  // }
-
-
-
-  //start motor driver 配置驱动为正常输出模式
-  // MotorDriverSetMode(MDRV_MODE_RUN);  
-
-//以下为实际使用：
-//正常运行时调用方式二选一均可
-
-  
-  //配置电机电流目标值，此为ADC值，范围-1500 ~ +1500,对应最大相电流约为+-1.2A(非母线电流，即电源输入电流)
-  //数据类型int32_t
-
-  //MotorDriverSetCurrentAdc(200);
-
-
-  //配置电机电流目标值，此为实际值，范围-1200.0 ~ +1200.0, 对应最大相电流约为+-1.2A(非母线电流，即电源输入电流)
-  //数据类型float32_t
-
-  // MotorDriverSetCurrentReal(1000.0f);  
+  HAL_Delay(300); 
   init_flash_data();
   u8g2Init(&u8g2);  
   if (!HAL_GPIO_ReadPin(SYS_SW_GPIO_Port, SYS_SW_Pin)) {
@@ -553,12 +530,6 @@ void InitMysys(void)
   }
 
   u8g2_disp_init();
-  // pid_ctrl_speed_t.setpoint = 50;
-  // pid_ctrl_pos_t.setpoint = 0.0f;
-  // u8g2_disp_speed();
-  // u8g2_disp_pos();
-  // u8g2_disp_current();
-  // u8g2_disp_all();
 }
 
 
@@ -566,14 +537,6 @@ void LoopMysys(void)
 {
     while(1)
     {	  
-        // if (over_vol_protect_auto_flag && over_vol_protect_mode) {
-        //   if (HAL_GetTick() - over_vol_protect_auto_counter > 2000) {
-        //     over_vol_protect_auto_flag = 0;
-        //     over_vol_flag = 0;
-        //     error_code &= ~ERR_OVER_VOLTAGE;
-        //     sys_status = SYS_STANDBY;
-        //   }
-        // }
         i2c_timeout_counter = 0;
         if (i2c_stop_timeout_flag) {
           if (i2c_stop_timeout_delay < HAL_GetTick()) {
@@ -599,26 +562,11 @@ void LoopMysys(void)
           flash_data_write_back();
           can_change_flag = 0;
         }       
-        // encoder_update();
-        // if (usart_fault_flag) {
-        //   MX_USART3_UART_Init();
-        //   hard_uart_begin();
-        //   usart_fault_flag = 0;
-        // }
         button_update();
         u8g2_disp_update_mode();
-        // u8g2_disp_update_status();
         u8g2_disp_update_page();
         u8g2_disp_update_comm();
         
-        // if (LL_USART_IsActiveFlag_ORE(USART3)) {
-        //   LL_USART_ClearFlag_ORE(USART3);
-        //   MX_USART3_UART_Init();
-        // }
-        // if (usart_tx_flag && HAL_GetTick() - usart_tx_delay >= 50) {
-        //   HAL_GPIO_WritePin(GPIOB, RS485_DIR_Pin, GPIO_PIN_RESET);
-        //   usart_tx_flag = 0;
-        // }
         if (my_button.was_click) {
           dis_show_flag++;
           if (dis_show_flag >= DIS_MAX)
@@ -703,32 +651,6 @@ void LoopMysys(void)
           break;
         }
         ws2812_flash();
-        // u8g2_disp_update_status();
-        // u8g2_disp_update_vin(vol_input);
-        //voltage
-        // OLED_ShowNum(30,16, vol_input/100,2,8,1);
-        // OLED_ShowNum(48,16, vol_input/10%10,1,8,1);
-
-        // //current
-        // OLED_ShowNum(30,24, ph_current_max/1000,1,8,1);
-        // OLED_ShowNum(42,24, ph_current_max/10%100,2,8,1);
-          
-        // //angle
-        // OLED_ShowNum(30,32,MotorDriverGetMechanicalAngle()/10,3,8,1);
-        // OLED_ShowNum(53,32,MotorDriverGetMechanicalAngle()%10,1,8,1);
-        // OLED_Refresh();
-
-        // if (angle_error > 0.2f) {
-        //   neopixel_set_color(0, ((0x10 << 16) | (0 << 8) | 0));   
-        //   neopixel_set_color(1, ((0x10 << 16) | (0 << 8) | 0));   
-
-        //   ws2812_show();           
-        // } else {
-        //   neopixel_set_color(0, ((0 << 16) | (0x10 << 8) | 0));   
-        //   neopixel_set_color(1, ((0 << 16) | (0x10 << 8) | 0));   
-
-        //   ws2812_show();          
-        // }
         
         if (act_delay < HAL_GetTick()) {
           running_index++;
@@ -736,20 +658,10 @@ void LoopMysys(void)
             running_index = 0;
           if (status_flag) {
             status_flag = 0;
-            // OLED_ShowString(0,0," M5 BLDC  ",8,1);
           }
           else {
             status_flag = 1;
-            // OLED_ShowString(0,0," M5 BLDC *",8,1);
           }
-          // if (act_flag == 1) {
-          //   angle_target += 360.0f;
-          // } else if (act_flag == 3) {
-          //   angle_target = 180.0f;
-          // }   
-					// if (angle_target > 540.0f) {
-					// 	angle_target = 180.0f;
-					// }
           act_delay = HAL_GetTick() + 1000;
         }
 	}
@@ -783,15 +695,6 @@ void Loop_Control(void)
     mechanical_angle =  (360.0f * mechanical_turns) + encoder_absolute_angle_new;
 
     mechanical_rad =  mechanical_angle * PI / 180.0f;
-
-    // angle_error =  angle_target - mechanical_angle ;
-
-    // uq_output = angle_error * angle_kp;
-
-    // if(uq_output > uq_limit) uq_output = uq_limit;
-    // if(uq_output < -uq_limit) uq_output = -uq_limit;
-
-    // MotorDriverSetCurrentReal(uq_output);
 
     //lpfdata += (1.0 / (1.0 + 1.0/(2.0f * 3.14f *T*fc)))*(rawdata - lpfdata );
     //lpfdata ： 滤波后的数据。
@@ -896,15 +799,7 @@ void Rpm_Count_100us(void)
 
   if (speed_encoder_value_t.encoder_value != speed_encoder_value_t.last_encoder_value) {
     diff_encoder_value = speed_encoder_value_t.encoder_value - speed_encoder_value_t.last_encoder_value;
-    diff_encoder_value_lpf += (1.0f / (1.0f + 1.0f/(2.0f * 3.14f *0.00017857142857f*2.0f)))*(diff_encoder_value - diff_encoder_value_lpf );
-    // if (avg_filter_level != 0) {
-    //   speed_record[record_index] = diff_encoder_value_lpf;
-    //   record_index++;
-    //   if (record_index >= avg_filter_level) {
-    //     record_index = 0;
-    //   }
-    //   diff_encoder_value_lpf = avg_filter(speed_record, avg_filter_level);
-    // }       
+    diff_encoder_value_lpf += (1.0f / (1.0f + 1.0f/(2.0f * 3.14f *0.00017857142857f*2.0f)))*(diff_encoder_value - diff_encoder_value_lpf );    
     motor_rpm = diff_encoder_value_lpf / 16383.0f * 336000;
     speed_encoder_value_t.last_encoder_value = speed_encoder_value_t.encoder_value;
   }
@@ -916,10 +811,9 @@ void Rpm_Count_100us(void)
 
 void TIM1_UP_TIM16_IRQHandler(void)
 {
-  //HAL_TIM_IRQHandler(&htim1);
   
   __HAL_TIM_CLEAR_IT(&htim1, TIM_IT_UPDATE);
-  //MotorDriverProcess();
+
   if(counter_loop_foc<2)
   {
     counter_loop_foc+=1;
@@ -1033,7 +927,6 @@ void TIM1_UP_TIM16_IRQHandler(void)
   else
   {
     encoder_counter=0;
-    // encoder_update();
   }
 }
 

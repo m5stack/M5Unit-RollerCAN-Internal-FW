@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * File Name          : encoder.c
+  * File Name          : ws2812.c
   * Description        : This file provides code for the configuration
-  *                      of all used GPIO pins.
+  *                      of ws2812.
   ******************************************************************************
   * @attention
   *
@@ -26,20 +26,6 @@
 #include "mysys.h"
 /* USER CODE END 0 */
 
-/*----------------------------------------------------------------------------*/
-/* Configure GPIO                                                             */
-/*----------------------------------------------------------------------------*/
-/* USER CODE BEGIN 1 */
-
-/* USER CODE END 1 */
-
-/** Configure pins as 
-        * Analog 
-        * Input 
-        * Output
-        * EVENT_OUT
-        * EXTI
-*/
 uint32_t *color_buf = NULL;
 uint8_t rled[PIXEL_MAX] = {0};
 uint8_t gled[PIXEL_MAX] = {0};
