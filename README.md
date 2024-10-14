@@ -14,6 +14,14 @@ See also examples using conventional methods here.
 
 - [Unit RollerCAN & Datasheet](https://docs.m5stack.com/en/unit/Unit-RollerCAN)
 
+## Related Project
+
+This project references the following open source projects.
+
+- [smartknob](https://github.com/scottbez1/smartknob)
+- [PID_Controller](https://github.com/tcleg/PID_Controller)
+- [u8g2](https://github.com/olikraus/u8g2)
+
 ## License
 
 - [M5Unit-RollerCAN-MIT](LICENSE)
