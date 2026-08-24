@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "executable": "build/Debug/ROLLERCAN.elf",
+      "name": "Debug with J-Link",
+      "request": "launch",
+      "type": "cortex-debug",
+      "preLaunchTask": "Build Debug",
+      "device": "STM32G431CB",
+      "interface": "swd",
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "none",
+      "servertype": "jlink",
+      "liveWatch": {
+        "enabled": true,
+        "samplesPerSecond": 4
+      }
+    }
+  ]
+}

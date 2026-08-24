@@ -1,0 +1,6 @@
+r
+h
+loadfile build/Debug/ROLLERCAN.elf
+r
+g
+exit

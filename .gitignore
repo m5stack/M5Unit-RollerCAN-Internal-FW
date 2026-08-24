@@ -32,3 +32,35 @@
 *.app
 
 .vscode
+!code/Unit-RollerCAN/.vscode/
+code/Unit-RollerCAN/.vscode/*
+!code/Unit-RollerCAN/.vscode/launch.json
+!code/Unit-RollerCAN/.vscode/settings.json
+!code/Unit-RollerCAN/.vscode/tasks.json
+!code/Unit-RollerCAN/.vscode/jlink/
+code/Unit-RollerCAN/.vscode/jlink/*
+!code/Unit-RollerCAN/.vscode/jlink/flash-debug.jlink
+!code/Unit-RollerCAN-Bootloader/.vscode/
+code/Unit-RollerCAN-Bootloader/.vscode/*
+!code/Unit-RollerCAN-Bootloader/.vscode/launch.json
+
+# CMake build output
+**/build/
+**/out/
+CMakeUserPresets.json
+compile_commands.json
+
+# Firmware build artifacts
+*.bin
+*.elf
+*.hex
+*.lst
+*.map
+
+# Keep named release firmware artifacts.
+!firmware/*.bin
+!firmware/*.hex
+
+# Tool caches and logs
+.cache/
+*.log
